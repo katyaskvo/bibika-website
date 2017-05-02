@@ -15,24 +15,45 @@ $text-color: #4A4A4A;
 body {
   background: $primary-background;
   color: $text-color;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  min-width: 320px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 a {
   color: $text-color;
 }
+h2 {
+  font-size: 36px;
+  margin: 40px 0;
+  font-weight: normal;
+}
+h3 {
+  font-size: 16px;
+  margin: 40px 0 10px 0;
+  font-weight: 600;
+  line-height: 1.5;
+}
 .navbar {
-  padding: 30px 0;
   background: $primary-background-transparent;
+}
+.navbar-nav {
+  margin-left: 0;
+  margin-right: 0;
+  //  li {
+  //   padding: 0 15px;
+  // }
 }
 .navbar-brand {
   text-indent: -999999px;
-  background: url(../assets/logo.svg) 0 0 no-repeat;
-  width: 119px;
-  height: 61px;
-  padding: 0;
+  background: url(../assets/logo.svg) 15px 15px no-repeat;
+  width: 139px;
+  height: 81px;
   display: inline-block;
 }
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-  margin-left: 0;
+.navbar-toggle {
+  margin: 0;
+  padding: 15px;
 }
 #navbar {
   font-size: 16px;
@@ -49,37 +70,116 @@ a {
 }
 
 .beetle {
-  margin: 180px 0;
+  margin: 180px 0 84px 0;
   text-align: center;
 
   img {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 }
+.appstore-button {
+  background: url(../assets/app_store_button_128.png) 0 0 no-repeat;
+  width: 128px;
+  height: 40px;
+  display: block;
+  margin: 60px auto;
+  text-indent: -999999px;
+}
 
-#about-bibika {
+.pink-container {
   background: $secondary-background;
+  padding-bottom: 100px;
+}
+
+.container {
+  // width: 900px;
+  overflow: auto;
 }
 //Carousel
 
 #myCarousel {
-  width: 1024px;
-  height: 697px;
+  $width: 290px;
+  $height: 196px;
+  $side-padding: $width * 0.08;
+  $vertical-padding: $width * 0.025;
+  $bottom-margin: 54px;
+  width: $width;
+  height: $height;
   background: white;
-  border-radius: 35px;
+  border-radius: $width * 0.039;
   border: 2px solid $text-color;
-  padding: 22px 72px;
-  margin: 0 auto;
+  padding: $vertical-padding $side-padding;
+  box-sizing: padding-box;
+  margin: 0 auto $bottom-margin auto;
+
+  &::before {
+    $home-button-size: $width * 0.049;
+    box-sizing: border-box;
+    content: "";
+    width: $home-button-size;
+    height: $home-button-size;
+    border-radius: 50%;
+    border: 2px solid $text-color;
+    position: absolute;
+    top: $height/2 - $home-button-size/2;
+    right: ($side-padding - $home-button-size)/2;
+    display: block;
+  }
 
   .carousel-inner {
     background: black;
+    height: 100%;
   }
   .carousel-indicators {
+    $padding: 14px;
     position: absolute;
-    bottom: -40px;
+    padding: $padding 0;
+    bottom: -($bottom-margin);
+
+    li {
+      $bullet-size: 10px;
+      width: $bullet-size;
+      height: $bullet-size;
+      box-sizing: border-box;
+      border-color: $text-color;
+      margin: 0 6px;
+      &.active {
+        background-color: $text-color;
+        width: $bullet-size;
+        height: $bullet-size;
+      }
+    }
   }
   .item > img {
     width: 100%;
   }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

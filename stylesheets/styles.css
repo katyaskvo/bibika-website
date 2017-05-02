@@ -8792,88 +8792,166 @@ button.close {
 body {
   background: #FDF262;
   color: #4A4A4A;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  min-width: 320px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 a {
   color: #4A4A4A;
 }
 
-/* line 22, ../sass/styles.scss */
-.navbar {
-  padding: 30px 0;
-  background: rgba(253, 242, 98, 0.5);
-}
-
 /* line 26, ../sass/styles.scss */
-.navbar-brand {
-  text-indent: -999999px;
-  background: url(../assets/logo.svg) 0 0 no-repeat;
-  width: 119px;
-  height: 61px;
-  padding: 0;
-  display: inline-block;
+h2 {
+  font-size: 36px;
+  margin: 40px 0;
+  font-weight: normal;
 }
 
-/* line 34, ../sass/styles.scss */
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-  margin-left: 0;
+/* line 31, ../sass/styles.scss */
+h3 {
+  font-size: 16px;
+  margin: 40px 0 10px 0;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 /* line 37, ../sass/styles.scss */
+.navbar {
+  background: rgba(253, 242, 98, 0.5);
+}
+
+/* line 40, ../sass/styles.scss */
+.navbar-nav {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 47, ../sass/styles.scss */
+.navbar-brand {
+  text-indent: -999999px;
+  background: url(../assets/logo.svg) 15px 15px no-repeat;
+  width: 139px;
+  height: 81px;
+  display: inline-block;
+}
+
+/* line 54, ../sass/styles.scss */
+.navbar-toggle {
+  margin: 0;
+  padding: 15px;
+}
+
+/* line 58, ../sass/styles.scss */
 #navbar {
   font-size: 16px;
   padding: 12px 0 0 0;
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .navbar-toggle .icon-bar {
   background-color: #4A4A4A;
 }
 
-/* line 45, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background: none;
   color: #4A4A4A;
   text-decoration: underline;
 }
 
-/* line 51, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .beetle {
-  margin: 180px 0;
+  margin: 180px 0 84px 0;
   text-align: center;
 }
-/* line 55, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .beetle img {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
-/* line 61, ../sass/styles.scss */
-#about-bibika {
+/* line 82, ../sass/styles.scss */
+.appstore-button {
+  background: url(../assets/app_store_button_128.png) 0 0 no-repeat;
+  width: 128px;
+  height: 40px;
+  display: block;
+  margin: 60px auto;
+  text-indent: -999999px;
+}
+
+/* line 91, ../sass/styles.scss */
+.pink-container {
   background: #FCB1A8;
+  padding-bottom: 100px;
 }
 
-/* line 66, ../sass/styles.scss */
-#myCarousel {
-  width: 1024px;
-  height: 697px;
-  background: white;
-  border-radius: 35px;
-  border: 2px solid #4A4A4A;
-  padding: 22px 72px;
-  margin: 0 auto;
+/* line 96, ../sass/styles.scss */
+.container {
+  overflow: auto;
 }
-/* line 75, ../sass/styles.scss */
+
+/* line 102, ../sass/styles.scss */
+#myCarousel {
+  width: 290px;
+  height: 196px;
+  background: white;
+  border-radius: 11.31px;
+  border: 2px solid #4A4A4A;
+  padding: 7.25px 23.2px;
+  box-sizing: padding-box;
+  margin: 0 auto 54px auto;
+}
+/* line 117, ../sass/styles.scss */
+#myCarousel::before {
+  box-sizing: border-box;
+  content: "";
+  width: 14.21px;
+  height: 14.21px;
+  border-radius: 50%;
+  border: 2px solid #4A4A4A;
+  position: absolute;
+  top: 90.895px;
+  right: 4.495px;
+  display: block;
+}
+/* line 131, ../sass/styles.scss */
 #myCarousel .carousel-inner {
   background: black;
+  height: 100%;
 }
-/* line 78, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 #myCarousel .carousel-indicators {
   position: absolute;
-  bottom: -40px;
+  padding: 14px 0;
+  bottom: -54px;
 }
-/* line 82, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
+#myCarousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border-color: #4A4A4A;
+  margin: 0 6px;
+}
+/* line 148, ../sass/styles.scss */
+#myCarousel .carousel-indicators li.active {
+  background-color: #4A4A4A;
+  width: 10px;
+  height: 10px;
+}
+/* line 155, ../sass/styles.scss */
 #myCarousel .item > img {
   width: 100%;
 }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
