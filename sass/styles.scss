@@ -104,37 +104,47 @@ nav > .container {
 }
 
 .container {
+  max-width: 900px;
   overflow: auto;
   padding-bottom: 80px;
 }
+.pink-wide-container {
+  width: 100%;
+  background-color: $secondary-background;
+}
 //Carousel
+#about-bibika {
+  width: 100%;
 
 #myCarousel {
-  $width: 290px;
-  $height: 196px;
+  max-width: 1200px;
+  $width: 100%;
+  $height: $width * 0.675;
   $side-padding: $width * 0.08;
   $vertical-padding: $width * 0.025;
   $bottom-margin: 54px;
   width: $width;
   height: $height;
   background: white;
-  border-radius: $width * 0.039;
+  border-radius: 3.5%/5%;
+  // border-radius: ($width * 0.039)/($height * 0.051) ($width * 0.039)/($height * 0.051) ($width * 0.039)/($height * 0.051) ($width * 0.039)/($height * 0.051);
   border: 2px solid $text-color;
   padding: $vertical-padding $side-padding;
   box-sizing: padding-box;
   margin: 0 auto $bottom-margin auto;
 
   &::before {
-    $home-button-size: $width * 0.049;
+    $home-button-width: $width * 0.049;
+    $home-button-height: $width * 0.0725;
     box-sizing: border-box;
     content: "";
-    width: $home-button-size;
-    height: $home-button-size;
+    width: $home-button-width;
+    height: $home-button-height;
     border-radius: 50%;
     border: 2px solid $text-color;
     position: absolute;
-    top: $height/2 - $home-button-size/2;
-    right: ($side-padding - $home-button-size)/2;
+    top: 50% - $home-button-width/2;
+    right: ($side-padding - $home-button-width)/1.6;
     display: block;
   }
 
@@ -165,6 +175,7 @@ nav > .container {
   .item > img {
     width: 100%;
   }
+}
 }
 
 //Creators
@@ -209,7 +220,34 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+  // #myCarousel {
+  //   $width: 290px;
+  //   $height: 196px;
+  //   $side-padding: $width * 0.08;
+  //   $vertical-padding: $width * 0.025;
+  //   $bottom-margin: 54px;
+  //   width: $width;
+  //   height: $height;
+  //   background: white;
+  //   border-radius: $width * 0.039;
+  //   border: 2px solid $text-color;
+  //   padding: $vertical-padding $side-padding;
+  //   box-sizing: padding-box;
+  //   margin: 0 auto $bottom-margin auto;
+  //
+  //   &::before {
+  //     $home-button-size: $width * 0.049;
+  //     box-sizing: border-box;
+  //     content: "";
+  //     width: $home-button-size;
+  //     height: $home-button-size;
+  //     border-radius: 50%;
+  //     border: 2px solid $text-color;
+  //     position: absolute;
+  //     top: $height/2 - $home-button-size/2;
+  //     right: ($side-padding - $home-button-size)/2;
+  //     display: block;
+  //   }
 }
 
 /* Extra Small Devices, Phones */
