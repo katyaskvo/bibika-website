@@ -8788,114 +8788,172 @@ button.close {
     display: none !important;
   }
 }
-/* line 15, ../sass/styles.scss */
+/**
+ * http://applemusic.tumblr.com/
+ * https://jsfiddle.net/xq56dmrh/
+ */
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+/* line 17, ../sass/styles.scss */
 body {
   background: #FDF262;
   color: #4A4A4A;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   min-width: 320px;
   line-height: 1.8;
   font-size: 16px;
+  font-weight: 200;
 }
 
-/* line 23, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
 a {
   color: #4A4A4A;
 }
 
-/* line 26, ../sass/styles.scss */
-h2 {
-  font-size: 36px;
-  margin: 40px 0;
-  font-weight: normal;
+/* line 28, ../sass/styles.scss */
+strong {
+  font-weight: 500;
 }
 
 /* line 31, ../sass/styles.scss */
+h2 {
+  font-size: 36px;
+  margin: 40px 0;
+  font-weight: 200;
+}
+
+/* line 36, ../sass/styles.scss */
 h3 {
+  font-size: 24px;
+  margin: 14px 0 24px 0;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+/* line 42, ../sass/styles.scss */
+h4 {
   font-size: 16px;
-  margin: 40px 0 10px 0;
+  margin: 40px 0 0 0;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
-/* line 37, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .navbar {
-  background: rgba(253, 242, 98, 0.5);
+  background: rgba(253, 242, 98, 0.8);
 }
 
-/* line 40, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 .navbar-nav {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .navbar-brand {
   text-indent: -999999px;
   background: url(../assets/logo.svg) 15px 15px no-repeat;
-  width: 139px;
-  height: 81px;
+  width: 149px;
+  height: 89px;
   display: inline-block;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .navbar-toggle {
   margin: 0;
   padding: 15px;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 #navbar {
   font-size: 16px;
   padding: 12px 0 0 0;
 }
 
-/* line 62, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .navbar-toggle .icon-bar {
   background-color: #4A4A4A;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background: none;
   color: #4A4A4A;
   text-decoration: underline;
 }
 
-/* line 72, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
+nav > .container {
+  padding-bottom: 0;
+}
+
+/* line 83, ../sass/styles.scss */
 .beetle {
-  margin: 180px 0 84px 0;
+  margin: 180px 0 0 0;
   text-align: center;
 }
-/* line 76, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .beetle img {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 .appstore-button {
   background: url(../assets/app_store_button_128.png) 0 0 no-repeat;
   width: 128px;
   height: 40px;
   display: block;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   text-indent: -999999px;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .pink-container {
   background: #FCB1A8;
-  padding-bottom: 100px;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .container {
   overflow: auto;
+  padding-bottom: 80px;
 }
 
-/* line 102, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 #myCarousel {
   width: 290px;
   height: 196px;
@@ -8906,7 +8964,7 @@ h3 {
   box-sizing: padding-box;
   margin: 0 auto 54px auto;
 }
-/* line 117, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 #myCarousel::before {
   box-sizing: border-box;
   content: "";
@@ -8919,18 +8977,18 @@ h3 {
   right: 4.495px;
   display: block;
 }
-/* line 131, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 #myCarousel .carousel-inner {
   background: black;
   height: 100%;
 }
-/* line 135, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 #myCarousel .carousel-indicators {
   position: absolute;
   padding: 14px 0;
   bottom: -54px;
 }
-/* line 141, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 #myCarousel .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -8938,15 +8996,58 @@ h3 {
   border-color: #4A4A4A;
   margin: 0 6px;
 }
-/* line 148, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 #myCarousel .carousel-indicators li.active {
   background-color: #4A4A4A;
   width: 10px;
   height: 10px;
 }
-/* line 155, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 #myCarousel .item > img {
   width: 100%;
+}
+
+/* line 172, ../sass/styles.scss */
+.portrait {
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+/* line 176, ../sass/styles.scss */
+.creator {
+  margin-bottom: 70px;
+}
+
+/* line 179, ../sass/styles.scss */
+#special-thanks a {
+  font-weight: 500;
+}
+
+/* line 185, ../sass/styles.scss */
+footer {
+  background-color: #4A4A4A;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+/* line 193, ../sass/styles.scss */
+footer ul {
+  margin-bottom: 20px;
+}
+/* line 196, ../sass/styles.scss */
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+}
+/* line 199, ../sass/styles.scss */
+footer a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 202, ../sass/styles.scss */
+footer a.logo {
+  margin: 20px;
 }
 
 /*==========  Mobile First Method  ==========*/

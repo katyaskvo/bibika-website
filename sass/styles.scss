@@ -7,32 +7,43 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+@import "sanfrancisco-font";
+
 $primary-background: #FDF262;
-$primary-background-transparent: rgba(253,242,98,0.5);
+$primary-background-transparent: rgba(253,242,98,0.8);
 $secondary-background: #FCB1A8;
 $text-color: #4A4A4A;
 
 body {
   background: $primary-background;
   color: $text-color;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   min-width: 320px;
   line-height: 1.8;
   font-size: 16px;
+  font-weight: 200;
 }
 a {
   color: $text-color;
 }
+strong {
+  font-weight: 500;
+}
 h2 {
   font-size: 36px;
   margin: 40px 0;
-  font-weight: normal;
+  font-weight: 200;
 }
 h3 {
+  font-size: 24px;
+  margin: 14px 0 24px 0;
+  font-weight: 200;
+  line-height: 1.8;
+}
+h4 {
   font-size: 16px;
-  margin: 40px 0 10px 0;
+  margin: 40px 0 0 0;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .navbar {
   background: $primary-background-transparent;
@@ -40,15 +51,12 @@ h3 {
 .navbar-nav {
   margin-left: 0;
   margin-right: 0;
-  //  li {
-  //   padding: 0 15px;
-  // }
 }
 .navbar-brand {
   text-indent: -999999px;
   background: url(../assets/logo.svg) 15px 15px no-repeat;
-  width: 139px;
-  height: 81px;
+  width: 149px;
+  height: 89px;
   display: inline-block;
 }
 .navbar-toggle {
@@ -68,9 +76,12 @@ h3 {
   color: $text-color;
   text-decoration: underline;
 }
+nav > .container {
+  padding-bottom: 0;
+}
 
 .beetle {
-  margin: 180px 0 84px 0;
+  margin: 180px 0 0 0;
   text-align: center;
 
   img {
@@ -84,18 +95,17 @@ h3 {
   width: 128px;
   height: 40px;
   display: block;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   text-indent: -999999px;
 }
 
 .pink-container {
   background: $secondary-background;
-  padding-bottom: 100px;
 }
 
 .container {
-  // width: 900px;
   overflow: auto;
+  padding-bottom: 80px;
 }
 //Carousel
 
@@ -154,6 +164,44 @@ h3 {
   }
   .item > img {
     width: 100%;
+  }
+}
+
+//Creators
+
+.portrait {
+  margin: 0 auto 10px auto;
+  display: block;
+}
+.creator {
+  margin-bottom: 70px;
+}
+#special-thanks a{
+  font-weight: 500;
+}
+
+//Footer
+
+footer {
+  $text: rgba(255,255,255,0.7);
+  background-color: $text-color;
+  color: $text;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  ul {
+    margin-bottom: 20px;
+  }
+  a {
+    color: $text;
+    font-weight: 100;
+    &:hover {
+      color: $text
+    }
+    &.logo {
+      margin: 20px;
+    }
   }
 }
 
