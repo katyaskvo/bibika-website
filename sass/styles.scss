@@ -51,6 +51,10 @@ h4 {
 .navbar-nav {
   margin-left: 0;
   margin-right: 0;
+  & > li > a {
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
 }
 .navbar-brand {
   text-indent: -999999px;
