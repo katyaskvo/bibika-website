@@ -8900,7 +8900,7 @@ h4 {
 /* line 66, ../sass/styles.scss */
 #navbar {
   font-size: 16px;
-  padding: 12px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 /* line 70, ../sass/styles.scss */
@@ -8986,12 +8986,12 @@ nav > .container {
   border: 2px solid #4A4A4A;
   position: absolute;
   top: 47.55%;
-  right: 1.9375%;
+  right: 1.55%;
   display: block;
 }
 /* line 151, ../sass/styles.scss */
 #about-bibika #myCarousel .carousel-inner {
-  background: black;
+  background: white;
   height: 100%;
 }
 /* line 155, ../sass/styles.scss */
@@ -9065,6 +9065,25 @@ footer a.logo {
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 600px) {
+  /* line 255, ../sass/styles.scss */
+  footer {
+    padding: 40px 0;
+  }
+  /* line 257, ../sass/styles.scss */
+  footer ul {
+    margin-bottom: 40px;
+  }
+  /* line 259, ../sass/styles.scss */
+  footer ul li {
+    display: inline-block;
+    margin: 0 2%;
+  }
+  /* line 265, ../sass/styles.scss */
+  footer a.logo {
+    margin: 40px;
+  }
+}
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */

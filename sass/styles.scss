@@ -65,7 +65,7 @@ h4 {
 }
 #navbar {
   font-size: 16px;
-  padding: 12px 0 0 0;
+  padding: 15px 0 0 0;
 }
 .navbar-toggle .icon-bar {
   background-color: $text-color;
@@ -144,12 +144,12 @@ nav > .container {
     border: 2px solid $text-color;
     position: absolute;
     top: 50% - $home-button-width/2;
-    right: ($side-padding - $home-button-width)/1.6;
+    right: ($side-padding - $home-button-width)/2;
     display: block;
   }
 
   .carousel-inner {
-    background: black;
+    background: white;
     height: 100%;
   }
   .carousel-indicators {
@@ -251,8 +251,22 @@ footer {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
+@media only screen and (min-width : 600px) {
+  footer {
+    padding: 40px 0;
+    ul {
+      margin-bottom: 40px;
+      li {
+        display: inline-block;
+        margin: 0 2%;
+      }
+    }
+    a {
+      &.logo {
+        margin: 40px;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
