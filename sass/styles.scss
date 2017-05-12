@@ -253,9 +253,12 @@ footer {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 600px) {
   footer {
+
     padding: 40px 0;
     ul {
+      max-width: 1200px;
       margin-bottom: 40px;
+      margin: 0 auto 40px auto;
       li {
         display: inline-block;
         margin: 0 2%;

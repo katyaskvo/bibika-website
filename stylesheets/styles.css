@@ -9070,16 +9070,18 @@ footer a.logo {
   footer {
     padding: 40px 0;
   }
-  /* line 257, ../sass/styles.scss */
+  /* line 258, ../sass/styles.scss */
   footer ul {
+    max-width: 1200px;
     margin-bottom: 40px;
+    margin: 0 auto 40px auto;
   }
-  /* line 259, ../sass/styles.scss */
+  /* line 262, ../sass/styles.scss */
   footer ul li {
     display: inline-block;
     margin: 0 2%;
   }
-  /* line 265, ../sass/styles.scss */
+  /* line 268, ../sass/styles.scss */
   footer a.logo {
     margin: 40px;
   }
