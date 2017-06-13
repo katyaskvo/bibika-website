@@ -8830,7 +8830,7 @@ button.close {
 }
 /* line 17, ../sass/styles.scss */
 body {
-  background: #FDF262;
+  background: #fae755;
   color: #4A4A4A;
   min-width: 320px;
   line-height: 1.8;
@@ -8873,7 +8873,7 @@ h4 {
 
 /* line 48, ../sass/styles.scss */
 .navbar {
-  background: rgba(253, 242, 98, 0.8);
+  background: #fae755;
 }
 
 /* line 51, ../sass/styles.scss */
@@ -8927,7 +8927,7 @@ nav > .container {
 
 /* line 87, ../sass/styles.scss */
 .beetle {
-  margin: 180px 0 0 0;
+  margin: 120px 0 0 0;
   text-align: center;
 }
 /* line 91, ../sass/styles.scss */

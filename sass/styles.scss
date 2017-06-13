@@ -9,7 +9,7 @@
 
 @import "sanfrancisco-font";
 
-$primary-background: #FDF262;
+$primary-background: #fae755;
 $primary-background-transparent: rgba(253,242,98,0.8);
 $secondary-background: #FCB1A8;
 $text-color: #4A4A4A;
@@ -46,7 +46,7 @@ h4 {
   line-height: 1.8;
 }
 .navbar {
-  background: $primary-background-transparent;
+  background: $primary-background;
 }
 .navbar-nav {
   margin-left: 0;
@@ -85,7 +85,7 @@ nav > .container {
 }
 
 .beetle {
-  margin: 180px 0 0 0;
+  margin: 120px 0 0 0;
   text-align: center;
 
   img {
