@@ -8844,18 +8844,30 @@ a {
 }
 
 /* line 28, ../sass/styles.scss */
-strong {
-  font-weight: 500;
+p > a {
+  border-bottom: 1px dashed #4A4A4A;
+}
+/* line 30, ../sass/styles.scss */
+p > a:hover {
+  color: black;
+  border-bottom-color: black;
+  text-decoration: none;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
+strong {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* line 40, ../sass/styles.scss */
 h2 {
   font-size: 36px;
   margin: 40px 0;
   font-weight: 200;
 }
 
-/* line 36, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 h3 {
   font-size: 24px;
   margin: 14px 0 24px 0;
@@ -8863,7 +8875,7 @@ h3 {
   line-height: 1.8;
 }
 
-/* line 42, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 h4 {
   font-size: 16px;
   margin: 40px 0 0 0;
@@ -8871,23 +8883,23 @@ h4 {
   line-height: 1.8;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .navbar {
   background: #fae755;
 }
 
-/* line 51, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .navbar-nav {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 54, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .navbar-nav > li > a {
   padding-bottom: 18px;
   padding-top: 18px;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 .navbar-brand {
   text-indent: -999999px;
   background: url(../assets/logo.svg) 15px 15px no-repeat;
@@ -8896,48 +8908,48 @@ h4 {
   display: inline-block;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 .navbar-toggle {
   margin: 0;
   padding: 15px;
 }
 
-/* line 70, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 #navbar {
   font-size: 16px;
   padding: 15px 0 0 0;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .navbar-toggle .icon-bar {
   background-color: #4A4A4A;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background: none;
   color: #4A4A4A;
   text-decoration: underline;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 nav > .container {
   padding-bottom: 0;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 .beetle {
-  margin: 120px 0 0 0;
+  margin: 80px 0 0 0;
   text-align: center;
 }
-/* line 91, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 .beetle img {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
 
-/* line 97, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .appstore-button {
   background: url(../assets/app_store_button_128.png) 0 0 no-repeat;
   width: 128px;
@@ -8947,29 +8959,29 @@ nav > .container {
   text-indent: -999999px;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 .pink-container {
   background: #FCB1A8;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .container {
   max-width: 900px;
   overflow: auto;
   padding-bottom: 80px;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .pink-wide-container {
   width: 100%;
   background-color: #FCB1A8;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 #about-bibika {
   width: 100%;
 }
-/* line 123, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 #about-bibika #myCarousel {
   max-width: 1200px;
   width: 100%;
@@ -8981,7 +8993,7 @@ nav > .container {
   box-sizing: padding-box;
   margin: 0 auto 54px auto;
 }
-/* line 140, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 #about-bibika #myCarousel::before {
   box-sizing: border-box;
   content: "";
@@ -8994,18 +9006,18 @@ nav > .container {
   right: 1.55%;
   display: block;
 }
-/* line 155, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 #about-bibika #myCarousel .carousel-inner {
   background: white;
   height: 100%;
 }
-/* line 159, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 #about-bibika #myCarousel .carousel-indicators {
   position: absolute;
   padding: 14px 0;
   bottom: -54px;
 }
-/* line 165, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 #about-bibika #myCarousel .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -9013,34 +9025,34 @@ nav > .container {
   border-color: #4A4A4A;
   margin: 0 6px;
 }
-/* line 172, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 #about-bibika #myCarousel .carousel-indicators li.active {
   background-color: #4A4A4A;
   width: 10px;
   height: 10px;
 }
-/* line 179, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 #about-bibika #myCarousel .item > img {
   width: 100%;
 }
 
-/* line 187, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .portrait {
   margin: 0 auto 10px auto;
   display: block;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .creator {
   margin-bottom: 70px;
 }
 
-/* line 194, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 #special-thanks a {
   font-weight: 500;
 }
 
-/* line 200, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 footer {
   background-color: #4A4A4A;
   color: rgba(255, 255, 255, 0.7);
@@ -9049,20 +9061,20 @@ footer {
   letter-spacing: 1px;
   padding: 20px 0;
 }
-/* line 208, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 footer ul {
   margin-bottom: 20px;
 }
-/* line 211, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 footer a {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 100;
 }
-/* line 214, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 footer a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 217, ../sass/styles.scss */
+/* line 226, ../sass/styles.scss */
 footer a.logo {
   margin: 20px;
 }
@@ -9071,22 +9083,22 @@ footer a.logo {
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 600px) {
-  /* line 259, ../sass/styles.scss */
+  /* line 268, ../sass/styles.scss */
   footer {
     padding: 40px 0;
   }
-  /* line 262, ../sass/styles.scss */
+  /* line 271, ../sass/styles.scss */
   footer ul {
     max-width: 1200px;
     margin-bottom: 40px;
     margin: 0 auto 40px auto;
   }
-  /* line 266, ../sass/styles.scss */
+  /* line 275, ../sass/styles.scss */
   footer ul li {
     display: inline-block;
     margin: 0 2%;
   }
-  /* line 272, ../sass/styles.scss */
+  /* line 281, ../sass/styles.scss */
   footer a.logo {
     margin: 40px;
   }

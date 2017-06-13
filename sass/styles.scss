@@ -25,8 +25,17 @@ body {
 a {
   color: $text-color;
 }
+p > a {
+  border-bottom: 1px dashed $text-color;
+  &:hover {
+    color: black;
+    border-bottom-color: black;
+    text-decoration: none;
+  }
+}
 strong {
   font-weight: 500;
+  white-space: nowrap;
 }
 h2 {
   font-size: 36px;
@@ -85,7 +94,7 @@ nav > .container {
 }
 
 .beetle {
-  margin: 120px 0 0 0;
+  margin: 80px 0 0 0;
   text-align: center;
 
   img {
