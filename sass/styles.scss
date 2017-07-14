@@ -191,6 +191,24 @@ nav > .container {
 }
 }
 
+//Feature icons
+
+#features {
+  text-align: center;
+  // padding-top: 80px;
+  img {
+    $icon-size: 100%;
+    width: $icon-size;
+    height: $icon-size;
+    max-width: 225px;
+    max-height: 225px;
+    margin: 15px 0;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+
 //Creators
 
 .portrait {
